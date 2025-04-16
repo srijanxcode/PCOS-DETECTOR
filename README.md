@@ -1,83 +1,41 @@
-PCOS Diagnosis Predictor
-A Machine Learning Web App for Polycystic Ovary Syndrome Risk Assessment
+# PCOS Diagnosis Predictor 🩺  
+*A Machine Learning Web App for Polycystic Ovary Syndrome Risk Assessment*
 
-App Demo
-(Replace with actual screenshot after deployment)
+![App Preview](https://via.placeholder.com/800x400/FF6B9E/FFFFFF?text=PCOS+Diagnosis+Predictor+Demo)
 
-📌 Overview
-This Streamlit-based web application predicts Polycystic Ovary Syndrome (PCOS) using a Random Forest Classifier trained on clinical biomarkers. Designed for healthcare professionals and researchers, it provides:
-✔ Real-time risk probability
-✔ Interactive data exploration
-✔ Model explainability with SHAP values
-✔ User-friendly interface with value range guidance
+## Table of Contents
+- [Features](#-features)
+- [Local Installation](#-local-installation)
+  - [Using Virtual Environment](#using-virtual-environment)
+- [Project Structure](#-project-structure)
+- [Dependencies](#-dependencies)
+- [License](#-license)
 
-🚀 Quick Start
-Prerequisites
-Python 3.8+
+## ✨ Features
+- **Real-time PCOS risk prediction** using Random Forest (AUC: 0.92)
+- **Interactive data explorer** with statistical visualizations
+- **Model explainability** via SHAP values
+- **Range-guided input system** with clinical value references
+- **Responsive design** for desktop and mobile use
 
-Git
+## 💻 Local Installation
 
-Installation
-Clone the repository:
-
-bash
-Copy
+### Using Virtual Environment
+```bash
+# 1. Clone the repository
 git clone https://github.com/yourusername/pcos-predictor.git
 cd pcos-predictor
-Install dependencies:
 
-bash
-Copy
+# 2. Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+.\venv\Scripts\activate   # Windows
+
+# 3. Install dependencies
 pip install -r requirements.txt
-Download the dataset:
 
-Place pcos_rotterdam_balanceado.csv in the project root
+# 4. Place dataset in project root
+# Download pcos_rotterdam_balanceado.csv and place it here
 
-Run the App
-bash
-Copy
+# 5. Run the application
 streamlit run app.py
-Access the app at: http://localhost:8501
-
-📂 Project Structure
-Copy
-pcos-predictor/
-├── app.py               # Main Streamlit application
-├── pcos_rotterdam_balanceado.csv  # Dataset
-├── requirements.txt     # Python dependencies
-└── README.md           # Documentation
-🔧 Dependencies
-streamlit
-
-pandas
-
-scikit-learn
-
-matplotlib
-
-seaborn
-
-numpy
-
-shap
-
-📊 Features
-Interactive Prediction: Input clinical values to get instant PCOS risk assessment
-
-Data Exploration: Visualize dataset statistics and distributions
-
-Model Insights: View feature importance and SHAP explanations
-
-Responsive Design: Works on both desktop and mobile devices
-
-📜 License
-MIT License - Free for academic and clinical use
-
-📸 Screenshots
-(Add actual screenshots of your app here after deployment)
-
-🌐 Live Demo
-Streamlit Cloud (Add your deployment link here)
-
-🤝 Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
