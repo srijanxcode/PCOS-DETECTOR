@@ -1,41 +1,30 @@
 # PCOS Diagnosis Predictor 🩺  
 *A Machine Learning Web App for Polycystic Ovary Syndrome Risk Assessment*
 
-![App Preview](https://via.placeholder.com/800x400/FF6B9E/FFFFFF?text=PCOS+Diagnosis+Predictor+Demo)
-
 ## Table of Contents
 - [Features](#-features)
-- [Local Installation](#-local-installation)
-  - [Using Virtual Environment](#using-virtual-environment)
+- [Installation Guide](#%EF%B8%8F-installation-guide)
 - [Project Structure](#-project-structure)
 - [Dependencies](#-dependencies)
 - [License](#-license)
 
 ## ✨ Features
-- **Real-time PCOS risk prediction** using Random Forest (AUC: 0.92)
-- **Interactive data explorer** with statistical visualizations
-- **Model explainability** via SHAP values
-- **Range-guided input system** with clinical value references
-- **Responsive design** for desktop and mobile use
+- Real-time PCOS risk prediction (Random Forest, AUC: 0.92)
+- Interactive data visualizations
+- SHAP-based model explanations
+- Clinical value range guidance
+- Responsive web interface
 
-## 💻 Local Installation
+## 🛠️ Installation Guide
 
-### Using Virtual Environment
-```bash
-# 1. Clone the repository
-git clone https://github.com/yourusername/pcos-predictor.git
-cd pcos-predictor
+### Prerequisites
+- Python 3.8+
+- Git
+- pip package manager
 
-# 2. Create and activate virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-.\venv\Scripts\activate   # Windows
+### Step-by-Step Setup
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Place dataset in project root
-# Download pcos_rotterdam_balanceado.csv and place it here
-
-# 5. Run the application
-streamlit run app.py
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/pcos-predictor.git
+   cd pcos-predictor
